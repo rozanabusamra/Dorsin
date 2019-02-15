@@ -33,12 +33,10 @@ $(document).ready(function(){
     .eq(6).css('background','#f09105').end()
     .eq(7).css('background','#f6cb42').end();
 
+    
     colorLi.click(function(){
-        $('.collapse .btn').css('background',$(this).css('background'));
-    });
-    colorLi.click(function(){
-        $("Link[href*='theme']").attr("href",$(this).attr("data-target"));
-        
+        //console.log($(this).attr("data-value"));
+        $("link[href*='theme']").attr("href",$(this).attr("data-value"));
     });
     
 });
