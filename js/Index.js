@@ -35,6 +35,7 @@ $(document).ready(function(){
 
     
     colorLi.click(function(){
+        $("link[href*='theme']").css("background",$(this).css("background"))
         //console.log($(this).attr("data-value"));
         $("link[href*='theme']").attr("href",$(this).attr("data-value"));
     });
