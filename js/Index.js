@@ -4,12 +4,12 @@ $(document).ready(function(){
         scrollTop = $(window).scrollTop();
         if (scrollTop > 100){
             $('.navbar').addClass ('scrollNav');
-            $('.backToTop').addClass ('visible');
+			$('.backToTop').addClass ('visible');
             $('.colorOption').addClass ('colorOptionBorder');
 			
         }else if (scrollTop < 100){
             $('.navbar').removeClass('scrollNav');
-            $('.backToTop').removeClass ('visible');
+			$('.backToTop').removeClass ('visible');
             $('.colorOption').removeClass ('colorOptionBorder');
         };
     });
@@ -34,10 +34,10 @@ $(document).ready(function(){
     .eq(7).css('background','#f6cb42').end();
 
     
-    colorLi.click(function(){
+   /* colorLi.click(function(){
         $("link[href*='theme']").css("background",$(this).css("background"))
         //console.log($(this).attr("data-value"));
         $("link[href*='theme']").attr("href",$(this).attr("data-value"));
-    });
+    });*/
     
 });
